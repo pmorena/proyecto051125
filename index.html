@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <div class="logo">🌐 MiPortafolio</div>
+    <ul class="nav-links">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <!-- Botón menú hamburguesa (para móviles) -->
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </nav>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>¡Hola! Soy <span class="resaltado">Tu Nombre</span></h1>
+    <p>Desarrollador web | Diseñador | Creativo</p>
+  </header>
+
+  <!-- Sección sobre mí -->
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy un apasionado de la tecnología y el diseño web. Me gusta crear sitios atractivos,
+      funcionales y fáciles de usar. En mi tiempo libre, me dedico a aprender nuevas herramientas
+      y lenguajes para mejorar mis habilidades.
+    </p>
+  </section>
+
+  <!-- Sección de proyectos -->
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="proyecto">
+      <h3>🌟 Proyecto 1</h3>
+      <p>Página web creada con HTML, CSS y JavaScript.</p>
+    </div>
+    <div class="proyecto">
+      <h3>💼 Proyecto 2</h3>
+      <p>Diseño de portafolio responsivo con Bootstrap.</p>
+    </div>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📧 <a href="mailto:tuemail@correo.com">tuemail@correo.com</a></p>
+    <p>🌐 <a href="https://linkedin.com/in/primitivo.morena" target="_blank">LinkedIn</a></p>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2025 Tu Nombre - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script para el menú -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
